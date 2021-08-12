@@ -1,0 +1,56 @@
+.container {
+    padding: 32px;
+    display: flex;
+    position: absolute;
+    height: 607px;
+    width: 1161px;
+    align-items: center;
+}
+
+.container > div {
+    margin-right: 32px;
+    border: 4px solid #000;
+    border-radius: 8px;
+    font-size: 24px;
+}
+
+.container > div:last-child {
+    margin-right: 0;
+}
+
+.container__box--hug {
+    padding: 16px;
+    background-color: #FF8577;
+}
+
+.container__box--fillVertical {
+    height: 100%;
+    background-color: #A259FF;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 166px;
+}
+
+.container__box--fillHorizontal {
+    background-color: #5551FF;
+    color: #fff;
+    height: 241px;
+    display: flex;
+    align-items: center;
+    flex: 1 1 auto;
+    justify-content: center;
+    text-align: center;
+}
+
+.container__box--fillHorizontalAndVertical {
+    background-color: #FFC700;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex: 1 1 auto;
+    justify-content: center;
+    text-align: center;
+}
