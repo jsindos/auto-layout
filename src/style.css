@@ -18,6 +18,66 @@
     margin-right: 0;
 }
 
+.card {
+    display: flex;
+    padding: 32px;
+}
+
+.card__icon {
+    border: 4px solid #000;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.card__icon > img {
+    position: absolute;
+    top: calc(50% - 20px);
+    left: calc(50% - 14px);
+}
+
+.card__right {
+    padding-left: 16px;
+}
+
+.card__right > div {
+    margin-bottom: 16px;
+}
+
+.card__right > div:last-child {
+    margin-bottom: 0;
+}
+
+.card__title {
+    font-weight: bold;
+}
+
+.card__text {
+    line-height: 150%;
+}
+
+.card__icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+}
+
+.icon__number {
+    color: #949494;
+    padding-left: 8px;
+}
+
+
+
+
+
 .container__box--hug {
     padding: 16px;
     background-color: #FF8577;

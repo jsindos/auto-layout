@@ -1,16 +1,34 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import styled from 'styled-components'
+import F from '../assets/_F_ 40×60.png'
+import Comment from '../assets/Comment.png'
+import Like from '../assets/Like.png'
+import Repost from '../assets/Repost.png'
 
 import './style.css'
 
 const App = () => {
   return (
     <div className='container'>
-      <Hug>
-        Hug contents
-      </Hug>
+      <div className='card'>
+        <div className='card__icon'>
+          <img src={F} />
+        </div>
+        <div className='card__right'>
+          <div className='card__title'>
+            @figmadesign
+          </div>
+          <div className='card__text'>
+            A design platform for teams who build products together.
+          </div>
+          <div className='card__icons'>
+            <Icon img={Comment} number='1' />
+            <Icon img={Repost} number='11' />
+            <Icon img={Like} number='67' />
+          </div>
+        </div>
+      </div>
       <div className='container__box--fillVertical'>
         Fixed width, fill vertically
       </div>
@@ -24,10 +42,14 @@ const App = () => {
   )
 }
 
-const Hug = styled.div`
-  padding: 16px;
-  background-color: #FF8577;
-`
+const Icon = ({ img, number }) => {
+  return (
+    <div className='icon'>
+      <img src={img} />
+      <span className='icon__number'>{number}</span>
+    </div>
+  )
+}
 
 const wrapper = document.getElementById('container')
 ReactDOM.render(<App />, wrapper)
